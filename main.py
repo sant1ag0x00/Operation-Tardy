@@ -11,16 +11,22 @@ for i in range(0, len(y)):
 #print(avg_arr)
 #print(avg)
 my_xticks = ['24.11.','25.11.','01.12.','02.12.', '08.12.']
+#plt.title('The Punctuality of \n F. M. B.')
+plt.title('Punctuality')
 plt.xticks(x, my_xticks)
-plt.xlabel = "Datum"
-plt.ylabel = "Zeit nach Vorlesungsbeginn in min"
+plt.xlabel("Datum")
+plt.ylabel("Zeit nach Vorlesungsbeginn(in min)")
 plt.ylim([0, 60])
 """
 fig, ax = plt.subplots(figsize=(5, 2.7), layout='constrained')
 ax.set_xlabel('Datum')
 ax.set_ylabel('Zeit nach Vorlesungsbeginn in min');
 """
-plt.plot(x, y, linestyle=":")
-plt.plot(x, avg_arr, color='r', label='Average')
+plt.plot(x, y, linestyle=':', label='Verspätung')
+plt.plot(x, avg_arr, color='r', label='Durchschnitt')
 plt.scatter(x,y)
+plt.title('Pünktlichkeit')
+plt.legend()
+plt.xlabel("Datum")
+plt.ylabel("Zeit nach Vorlesungsbeginn(in min)")
 plt.show()
