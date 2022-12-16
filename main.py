@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.array([0,1,2,3,4])
-y = np.array([32,20,48,37,33])
+x = np.array([0,1,2,3,4,5])
+y = np.array([32,20,48,37,33,53])
 avg = int((np.sum(y)/len(y)))
 #avg_arr = np.array([])
 """ made obsolete byplt.axhline
@@ -12,7 +12,7 @@ for i in range(0, len(y)):
 """
 #print(avg_arr)
 #print(avg)
-my_xticks = ['24.11.','25.11.','01.12.','02.12.', '08.12.']
+my_xticks = ['24.11.','25.11.','01.12.','02.12.', '08.12.', '16.12.']
 #plt.title('The Punctuality of \n F. M. B.')
 plt.title('Punctuality')
 plt.xticks(x, my_xticks)
