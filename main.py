@@ -12,7 +12,7 @@ for i in range(0, len(y)):
 """
 #print(avg_arr)
 #print(avg)
-my_xticks = ['24.11.','25.11.','01.12.','02.12.', '08.12.', '16.12.']
+my_xticks = ['24.11.','25.11.','01.12.','02.12.', '09.12.', '16.12.']
 #plt.title('The Punctuality of \n F. M. B.')
 plt.title('Punctuality')
 plt.xticks(x, my_xticks)
